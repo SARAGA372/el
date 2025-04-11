@@ -1,0 +1,817 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ---- Meta Tags ---- -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <!-- ---- Bootstrap CSS ---- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+ 
+    <!-- ---- Custom CSS ---- -->
+    <link rel="stylesheet" href="css/main.css" />
+ 
+    <!-- ---- Font Awesome ---- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ 
+    <title> Kpop Merchandise </title>
+  </head>
+  <body>
+    <!-- ---- Navbar ---- -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-4 fixed-top" style="background-color: rgb(82, 81, 82);">
+      <div class="container">
+        <a
+          href="index.html"
+          class="navbar-brand d-flex align-items-center justify-content-between order-lg-0"
+        >
+          <img src="Icon shop.png" alt="Site Icon" />
+          <span id="brand-name">Kpop Merch Store </span>
+        </a>
+ 
+        <div class="nav-btns order-lg-2">
+          <button class="btn position-relative" type="button">
+            <i class="fa fa-shopping-cart"></i>
+            <span
+              class="badge position-absolute top-0 bg-primary translate-middle start-100"
+              >5</span
+            >
+          </button>
+          <button class="btn position-relative" type="button">
+            <i class="fa fa-heart"></i>
+            <span
+              class="badge position-absolute top-0 bg-primary translate-middle start-100"
+              >2</span
+            >
+          </button>
+          <button class="btn" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+ 
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a href="#" class="nav-link text-dark">HOME</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#collection" class="nav-link text-dark">COLLECTION</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#specials" class="nav-link text-dark">SPECIALS</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#blogs" class="nav-link text-dark">BLOGS</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#about-us" class="nav-link text-dark">ABOUT US</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#popular" class="nav-link text-dark">POPULAR</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <!-- ---- Hero ---- -->
+    <section
+      id="hero"
+      class="vh-100 carousel slide"
+      data-bs-ride="carousel"
+      style="padding-top: 104px"
+    >
+      <div class="container carousel-inner h-100 d-flex align-items-center">
+        <div class="carousel-item text-center active">
+          <h2 class="text-white">Best Collection</h2>
+          <h1 class="text-white py-2 fw-bold">NEW ARRIVALS</h1>
+          <a href="login.html" class="btn">SHOP NOW</a>
+        </div>
+        <div class="carousel-item text-center">
+          <h2 class="text-white">Best Price & Offer</h2>
+          <h1 class="text-white py-2 fw-bold">NEW SEASON</h1>
+          <a href="login.html" class="btn">BUY NOW</a>
+        </div>
+        <div class="carousel-item text-center">
+          <h2 class="text-white">Best Time To Buy</h2>
+          <h1 class="text-white py-2 fw-bold">SUMMER SALE</h1>
+          <a href="login.html" class="btn">GET IT NOW</a>
+        </div>
+ 
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-slide="prev"
+          data-bs-target="#hero"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-slide="next"
+          data-bs-target="#hero"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+ 
+    <!-- ---- Collection ---- -->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block">New Collection</h2>
+        </div>
+ 
+        <div class="row g-0">
+          <div
+            class="d-flex flex-wrap mt-5 justify-content-center filter-button-group"
+          >
+            <button class="btn m-2 active-filter-btn" data-filter="*">
+              All
+            </button>
+            <button class="btn m-2" data-filter=".best">Best Sellers</button>
+            <button class="btn m-2" data-filter=".feat">Featured</button>
+            <button class="btn m-2" data-filter=".new">New Arrival</button>
+          </div>
+          <div class="collection-list row mt-4 gx-0 gy-3">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="collection-img position-relative">
+                <img
+                  src="blackpinkfunkopop2.jpg"
+                  alt="Blackpink Funko Pop"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating">
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"> Blackpink Funko Pop </p>
+                <span class="fw-bold">&#8369; 5,000 </span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+              <div class="collection-img position-relative">
+                <img
+                  src="enhypen plushies.jpg"
+                  alt="Enhypen Plushies"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating">
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"> Enhypen Plushies </p>
+                <span class="fw-bold">&#8369; 700 </span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+              <div class="collection-img position-relative">
+                <img
+                  src="Seventeen Picket.jpg"
+                  alt="Seventeen Image Picket"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating">
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"> Seventeen Image Picket </p>
+                <span class="fw-bold">&#8369; 800 </span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="collection-img position-relative">
+                <img
+                  src="Enhypen Photocard.jpeg"
+                  alt="Enhypen Photocard Set"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating">
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"> Enhypen Photocard Set</p>
+                <span class="fw-bold">&#8369; 1,200 </span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+              <div class="collection-img position-relative">
+                <img
+                  src="Enhypen Keyrings.jpg"
+                  alt="Enhypen Keyrings"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  > sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating">
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"> Enhypen Keyrings</p>
+                <span class="fw-bold">&#8369; 600 </span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+              <div class="collection-img position-relative">
+                <img
+                  src="Bts Shirt.jpg"
+                  alt="Bts Official Shirt"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating">
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"> Bts Official Shirt</p>
+                <span class="fw-bold">&#8369; 1,200 </span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+              <div class="collection-img position-relative">
+                <img
+                  src="Enhypen Hoodie.jpg"
+                  alt="Enhypen Official Hoodie"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating">
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"> Enhypen Official Hoodie</p>
+                <span class="fw-bold">&#8369; 3,000 </span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+              <div class="collection-img position-relative">
+                <img
+                  src="btsfunkokpop.jpg"
+                  alt="Bts Funko Pop"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating">
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                  <span class="text-primary"><i class="fa fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"> Bts Funko Pop</p>
+                <span class="fw-bold">&#8369; 7,000 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Specials -->
+    <section id="specials" class="py-5">
+      <div class="container">
+        <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block">Specials</h2>
+        </div>
+      </div>
+ 
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img
+              src="Enhypen Lightstick.jpg"
+              alt="Enhypen Lightstick"
+              class="w-100"
+            />
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"
+            >
+              <i class="fa fa-heart"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Enhypen Lightstick</p>
+            <span class="fw-bold d-block">&#8369; 3,500</span>
+            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          </div>
+        </div>
+ 
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img
+              src="Seventeen Lightstick.png"
+              alt="Seventeen Lightstick"
+              class="w-100"
+            />
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"
+            >
+              <i class="fa fa-heart"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Seventeen Lightstick</p>
+            <span class="fw-bold d-block">&#8369; 3,400 </span>
+            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          </div>
+        </div>
+ 
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img
+              src="btslightstick.jpeg"
+              alt="Bts Lighstick"
+              class="w-100"
+            />
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"
+            >
+              <i class="fa fa-heart"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1"> Bts Lightstick</p>
+            <span class="fw-bold d-block">&#8369; 4,000 </span>
+            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          </div>
+        </div>
+ 
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img
+              src="Treasure lighstick.jpg"
+              alt="Treasure Lighstick"
+              class="w-100"
+            />
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"
+            >
+              <i class="fa fa-heart"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Treasure Lighstick</p>
+            <span class="fw-bold d-block">&#8369; 3,400 </span>
+            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Banner -->
+    <section id="banner" class="py-5">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="banner-content">
+            <span class="text-white">Discount Up to 50%</span>
+            <h2 class="mt-2">Grand Sale Offer</h2>
+            <a href="#" class="btn border-0">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Blogs Section -->
+    <section id="blogs" class="py-5">
+      <div class="container">
+        <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block">Our Latest Blog</h2>
+        </div>
+ 
+        <div class="row">
+          <div class="col-md-6 col-lg-4 card border-0 my-3">
+            <img src="Kpop Blogs1.jpg" alt="blog 1" />
+            <div class="card-body">
+              <h4 class="Kpop sale">
+                “From Seoul to Your Cart: How K-pop Brands Use Social Media to Sell”
+              <p class="card-text mt-3 textmuted">
+                The rise of K-pop isn’t just a music revolution—it’s a marketing phenomenon.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Author:</small>John Doe
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+ 
+          <div class="col-md-6 col-lg-4 card border-0 my-3">
+            <img src="Blog2.jpg" alt="blog 1" />
+            <div class="card-body">
+              <h4 class="Born to be Fangirl and Fanboy">
+                Think you’ve decided what to buy? Actually, your brain is still deciding – even as you put it in your basket
+              </h4>
+              <p class="card-text mt-3 textmuted">
+                Our research shows our brains are still evaluating our decisions even as we act them out. Better awareness of what influences last-minute decision-making can help us make better choices.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Author:</small>Aries Molinar
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 card border-0 my-3">
+            <img src="Blog3.jpg" alt="blog 1" />
+            <div class="card-body">
+              <h4 class="Unboxing">
+                “Unboxing Experience as a Marketing Strategy in K-pop Culture”
+              </h4>
+              <p class="card-text mt-3 textmuted">
+                When you’re spending up at the end of financial year sales, it’s important to understand the refund and exchange policies of different retail stores.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Author:</small>John Eltos
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- About us -->
+    <section id="about-us" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-1 order-lg-1">
+            <div class="title pt-3 pb-5">
+              <h2 class="position-relative d-inline-block">About Us</h2>
+            </div>
+            <p class="lead text-muted">
+              A virtual space where customers can collect items before checkout.
+            </p>
+            <p>
+              The system that handles order fulfillment, including payment verification, inventory management, and shipping arrangements.
+            </p>
+          </div>
+ 
+          <div class="col-lg-6 order-lg-0">
+            <img
+              src="Blog1.jpg"
+              alt="about-us-imag"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Popular -->
+ 
+    <section id="popular" class="p-5">
+      <div class="container">
+        <div class="title text-center pt-3 pb-5">
+          <h2 class="position-relative d-inline-block">Popular of this Year</h2>
+        </div>
+ 
+        <div class="row">
+          <div class="col-md-6 col-lg-4 g-3 row">
+            <h3 class="fs-5">Top Rated</h3>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="Romance Untold Album.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0"> Set Enhypen Romance Untold </p>
+                <span>&#8369;1,200</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="Spill the feels svt album.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0"> 12th Mini Album "Spill The Feels" </p>
+                <span>&#8369;1,500</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="Enhypen Lightstick.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0"> Enhypen Lighstick </p>
+                <span>&#8369;3,500</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 g-3 row">
+            <h3 class="fs-5">On Sale</h3>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="btslightstick.jpeg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0"> Bts Lightstick</p>
+                <span>&#8369;4,000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="btsfunkokpop.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0">Bts Funko Pop</p>
+                <span>&#8369;7,000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="seventeen shirt.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0">Seventeen Shirt</p>
+                <span>&#8369;2,600 </span>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-6 col-lg-4 g-3 row">
+            <h3 class="fs-5">Best Selling</h3>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="Blackpink Lightstick 1.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0"> Blackpink Lighstick</p>
+                <span>&#8369;2,750</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="blackpinkFunkoPop1.jpeg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0">Set Blackpink Funko Pop </p>
+                <span>&#8369;8,000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="Enhypen Walk The Line.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0"> Enhypen Walk The Line Shirt</p>
+                <span>&#8369;4,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-md-6 col-lg-4 g-3 row">
+            <h3 class="fs-5">Top Rated</h3>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="images/top_rated_2.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0">Blue Shirt</p>
+                <span>&#8369;20.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="row">
+          <div class="col-md-6 col-lg-4 g-3 row">
+            <h3 class="fs-5">Top Rated</h3>
+            <div class="d-flex align-items-start justify-content-start">
+              <img
+                src="images/top_rated_3.jpg"
+                alt="top rated"
+                class="img-fluid w-25 pe-3"
+              />
+              <div class="description">
+                <p class="mb-0">Blue Shirt</p>
+                <span>&#8369;20.00</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+ 
+    <!-- News Letter -->
+    <section id="newsletter" class="py-5">
+      <div class="container">
+        <div
+          class="d-flex align-items-center justify-content-center flex-column"
+        >
+          <div class="title text-center pt-3 pb-5">
+            <h2 class="position-relative d-inline-block ms-4">
+              News Subscription
+            </h2>
+          </div>
+          <p class="text-center text-muted">
+            Detailed information about each product, including features, specifications, images, and pricing.
+          </p>
+          <div class="input-group mb-3 mt-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Email...."
+            />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Footer -->
+ 
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-3">
+          <div class="col-md-3 col-lg-3">
+            <a href="" class="brand text-decoration-none text-white">Ultra</a>
+            <p class="text-white mt-3 text-muted">
+              store is a virtual platform where businesses can sell products or services directly to consumers. It's essentially a digital storefront that operates 24/7, allowing customers to browse, select, and purchase items from anywhere with an internet connection
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light">Links</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a href="" class="text-white text-decoration-none text-muted"
+                  ><i class="fa fa-chevron-right me-1"></i>Home</a
+                >
+              </li>
+              <li class="my-3">
+                <a href="" class="text-white text-decoration-none text-muted"
+                  ><i class="fa fa-chevron-right me-1"></i>Collection</a
+                >
+              </li>
+              <li class="my-3">
+                <a href="" class="text-white text-decoration-none text-muted"
+                  ><i class="fa fa-chevron-right me-1"></i>Blog</a
+                >
+              </li>
+              <li class="my-3">
+                <a href="" class="text-white text-decoration-none text-muted"
+                  ><i class="fa fa-chevron-right me-1"></i>About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Contact Us</h5>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3"><i class="fa fa-envelope"></i></span>
+              <span class="fw-light">ultra.support@gmail.com</span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3"><i class="fa fa-map-marked"></i></span>
+              <span class="fw-light"
+                >ultra Street, Makati City, Philippines</span
+              >
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3"><i class="fa fa-phone"></i></span>
+              <span class="fw-light">09271234567</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Follow Us</h5>
+            <ul class="list-unstyled d-flex">
+              <li class="text-decoration-none text-muted fs-4 me-4">
+                <i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="text-decoration-none text-muted fs-4 me-4">
+                <i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="text-decoration-none text-muted fs-4 me-4">
+                <i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="text-decoration-none text-muted fs-4 me-4">
+                <i class="fab fa-pinterest"></i></a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+ 
+    <!-- ---- JQuery JS ---- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+    <!-- ---- Isotope JS ---- -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+ 
+    <!-- ---- Bootstrap JS ---- -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+ 
+    <!-- ---- Custom JS ---- -->
+    <script src="js/main.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
